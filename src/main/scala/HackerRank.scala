@@ -39,7 +39,7 @@ class HackerRank {
   //String-0-permute
   val str = "abcdpqrs"
   def swapEvenIndex = str.toList.grouped(2).map(_.reverse).flatten.mkString("")
-//with index 2 : badcqpsr string-> List-> group{(a,b)(c,d)(p,q)(r,s)} -> reverse -> badcqpsr
+  //with index 2 : badcqpsr string-> List-> group{(a,b)(c,d)(p,q)(r,s) } -> reverse -> badcqpsr
 
   val alist = (1 to 15).toList
   val strSwap = alist.map(_.toString).grouped(2).map(_.reverse).flatten.toList
